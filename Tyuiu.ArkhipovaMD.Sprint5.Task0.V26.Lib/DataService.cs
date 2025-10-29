@@ -7,9 +7,9 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task0.V26.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            //string dir = Path.Combine(Environment.CurrentDirectory, "AppData");
-            //Directory.CreateDirectory(dir);
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "OutputFileTask0.txt");
+            string dir = Path.Combine(Environment.CurrentDirectory, "app");
+            Directory.CreateDirectory(dir);
+            string path = Path.Combine(dir, "OutputFileTask0.txt");
             double fx = Math.Round(0.7*Math.Pow(x, 3)+1.52*Math.Pow(x,2),3);
             File.WriteAllText(path,Convert.ToString(fx));
             return path;
