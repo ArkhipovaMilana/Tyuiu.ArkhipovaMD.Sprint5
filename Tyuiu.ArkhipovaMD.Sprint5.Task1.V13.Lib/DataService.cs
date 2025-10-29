@@ -21,7 +21,7 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task1.V13.Lib
                     y = Math.Round(2*x-3/ (Math.Cos(x) + x), 2);
                     stry = Convert.ToString(y);
                 }
-                File.WriteAllText(path,$"{stry}\t");
+                File.WriteAllText(path,stry+"\n");
             }
             return path;
         }
