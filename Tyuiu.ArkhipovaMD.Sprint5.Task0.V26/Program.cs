@@ -4,3 +4,5 @@ int x = 5;
 DataService ds  = new DataService();
 string res = ds.SaveToFileTextData(x);
 Console.WriteLine("Файл "+ res + " Создан!");
+string result = Path.GetTempPath();
+Console.WriteLine(result);
