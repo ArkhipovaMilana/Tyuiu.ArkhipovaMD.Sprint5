@@ -22,10 +22,9 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task1.V13.Lib
                 }
                 else
                 {
-                    y = Math.Round(2*x-3/ (Math.Cos(x) + x), 2);
+                    y = Math.Round((2*x-3)/(Math.Cos(x) + x)+5, 2);
                     stry += Convert.ToString(y) + "\n";
                 }
-                Console.WriteLine(stry);
                 File.WriteAllText(path, stry);
             }
             return path;
