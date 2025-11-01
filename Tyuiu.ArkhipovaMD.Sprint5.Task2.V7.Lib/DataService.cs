@@ -20,7 +20,7 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task2.V7.Lib
                     {
                         matrix[i, j] = 0;
                     }
-                    stry += matrix[i, j] + "; ";
+                    stry += matrix[i, j] + ";";
                 }
                 stry += "\n";
             }
