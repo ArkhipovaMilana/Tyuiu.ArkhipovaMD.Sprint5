@@ -20,10 +20,12 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task2.V7.Lib
                     {
                         matrix[i, j] = 0;
                     }
-                    stry += matrix[i, j] + ";";
+                    stry += matrix[i, j]+ ";" ;
                 }
                 stry += "\n";
             }
+            int len = stry.Length-2;
+            stry = stry.Remove(len);
             File.WriteAllText(path, stry);
             return path;
         }
