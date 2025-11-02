@@ -23,8 +23,7 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task2.V7.Lib
                     stry += matrix[i, j]+ ";" ;
                 }
                 int len = stry.Length - 1;
-                stry = stry.Remove(len);
-                stry += "\n";
+                stry = stry.Remove(len) + "\n";
             }
             Console.WriteLine(stry);
             File.WriteAllText(path, stry);
