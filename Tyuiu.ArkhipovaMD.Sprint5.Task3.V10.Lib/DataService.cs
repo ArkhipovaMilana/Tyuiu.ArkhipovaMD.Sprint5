@@ -15,7 +15,7 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task3.V10.Lib
             double fx = Math.Round(-Math.Pow(x, 3) + 4 * x * x - (3 / 2) * x,3);
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate),Encoding.UTF8))
             {
-                writer.Write(fx);
+                writer.Write(BitConverter.GetBytes(fx));
             }
             Console.WriteLine(fx);
             return path;
