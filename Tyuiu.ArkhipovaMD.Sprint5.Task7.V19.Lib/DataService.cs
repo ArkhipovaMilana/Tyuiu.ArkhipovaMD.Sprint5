@@ -6,7 +6,7 @@ namespace Tyuiu.ArkhipovaMD.Sprint5.Task7.V19.Lib
         public string LoadDataAndSave(string path)
         {
             string text =File.ReadAllText(path);
-            text.Replace("cc", "");
+            text=text.Replace("сс", "").Replace("Сс","");
             return text;
         }
     }
